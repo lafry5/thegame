@@ -12,12 +12,21 @@
 
 
 #powerdown {
-   text-align: center;
+   text-align: left;
 }
 
+#powerup {
+    text-align: left;
+ }
+
 .down {
-    background-color:lightcoral;
-    display: inline-block;
+   /* background-color:lightcoral; */
+    display: inline;
+}
+
+.up {
+   /* background-color:lightseagreen; */
+    display: inline;
 }
 
 #today {
@@ -50,7 +59,7 @@
 .list-group {
     min-height: 130px;
     list-style: none;
-    padding:20px;
+   padding:20px; 
     border-top: solid, grey;
     border-bottom: solid, grey;
     border-left: solid, grey;
@@ -58,21 +67,11 @@
     box-shadow: beige;
   }
 
-  .list-groupb {
-    min-height: 130px;
-    list-style: none;
-    padding:20px;
-    border-top: solid, grey;
-    border-bottom: solid, grey;
-    border-left: solid, grey;
-    border-right: solid, grey;
-    box-shadow: beige;
-  }
 
   ul {
     display:inline-block;
     border:1px solid #000;
-    padding:20px;
+   padding:20px; 
  }
 
 .card {
@@ -85,7 +84,7 @@
     font-style: white;
     text-decoration-color: white;
     color: white;
-    width: 50px;
+    width: 100px;
     height: 100px;
 
 }
