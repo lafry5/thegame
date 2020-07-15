@@ -20,12 +20,15 @@ body {
     border-right: solid, black;
 }
 
-#searchb {
+/*#searchb {
     height: calc(1.5em + .75rem + 2px);
     border-radius: .25rem;
     margin: 20px;
-}
+}*/
 
+/*.col-lg-4 {
+    height: 300px;
+}*/
 
 #powerdown {
    text-align: left;
@@ -40,44 +43,19 @@ body {
     display: inline;
 }
 
-.up {
-   /* background-color:lightseagreen; */
-    display: inline;
-}
+/*.up {
+      display: inline;
+  }*/
 
-#today {
-    background-color: lightgray;
-    border: solid, black;
-    border-top: solid, black;
-    border-bottom: solid, black;
-    border-left: solid, black;
-    border-right: solid, black;
-    padding: 10px;
-    margin: 10px;
-    font-family: sans-serif
- }
 
-#name {
-    display: inline;
-
-}
-
-#day {
-    display: inline-block; 
-}
-
-#desc {
-    display: inline-block; 
-    justify-content: space-around;
-
-}
-
-ul {
-    background-color: white;
+div.col-lg-4 {
+    object-position: center;
+    padding: 16px;
+    margin: auto;
 }
 
 .list-group {
-    min-height: 130px;
+    min-height: 200px;
     list-style: none;
     padding:20px; 
     border-top: solid, grey;
@@ -90,13 +68,16 @@ ul {
 
 
   ul {
-    display:inline-block;
+    background-color: white;
     border:1px solid #000;
-    padding:20px; 
+    margin: auto; 
+    padding-left: 30px;
+    padding-right: 30px;
+
  }
 
 .card {
-    background-color: green;
+    background-color: tan;
     border: solid, black;
     border-top: solid, black;
     border-bottom: solid, black;

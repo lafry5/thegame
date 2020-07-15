@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!--the above is the bootstrap link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- link above is the font awesome link-->
-    <link rel="stylesheet" href="./style.css"> <!--css file-->
-    <title>TheGame</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--the above is the bootstrap link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- link above is the font awesome link-->
+  <link rel="stylesheet" href="./style.css">
+  <!--css file-->
+  <title>TheGame</title>
 </head>
+
 <body>
 
-  
-<!--<script>
+
+  <!--<script>
 var play = confirm("Would you like to Battle?");
 
   if(play){
@@ -24,134 +28,149 @@ var play = confirm("Would you like to Battle?");
 </script>-->
 
 
-    <header class="container-fluid text-center text-white bg-dark p-2">
-        <h1>Battle to Better</h1>
-    </header>
+  <header class="container-fluid text-center text-white bg-dark p-2">
+    <h1>Battle to Better</h1>
+  </header>
 
-    <div class="container"> 
+  <div class="container">
+    <div class="row">
+      <!--left side below-->
+      <div class="col-lg-4 mt-3">
+        <h5 id="search" class="mt-3">Allies</h5>
+        <div class="form-inline form-group">
+          <input class="form-control" type="text" id="search-value" />
+          <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button>
+        </div>
+        <ul class="list-group">
+          <!--list elements-->
+        </ul>
+      </div>
+
+
+      <div class="col-lg-4 mt-3">
+        <div class="down col-md-6">
+          <h5 id="powerdown">Penalties</h5>
+          <ul>
+            <li>Negative self-talk</li>
+            <li>Isolating</li>
+            <li>Not drinking water</li>
+            <li>Not taking meds</li>
+            <li>Not eating healthy</li>
+            <li>Not keeping appointments</li>
+            <li>No powerups</li>
+            <li>Ruminating</li>
+            <li>Trouble concentrating</li>
+            <li>Little interest in activities</li>
+            <li>Trouble sleeping</li>
+            <li>Sleeping too much</li>
+            <li>Feeling hopeless</li>
+            <li>Thinking about death/suicide</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-4 mt-3">
+        <div id="progress">
+          <h4>Today's Progress: <span id="count">0</span></h4>
+          <div class="container">
+            <button id="increment">Add a point</button>
+            <button id="decrement">Subtract a point</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!--Power Ups-->
+
+
+      <div id="forecast">
+        <h3>Power Ups</h3>
+        <!--<div class="container">-->
         <div class="row">
-            <!--left side below-->
-            <div class="col-lg-4 mt-3"> 
-                <h5 id="search" class="mt-3">Allies</h5>
-                 <div class="form-inline form-group">
-                    <input class="form-control" type="text" id="search-value" /> 
-                    <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button> 
-                 </div>
-            <ul class="list-group">
-                <!--list elements-->
-            </ul>
-            </div>
-           
-            <div class="col-lg-4 mt-3"> 
-              <div class="down col-md-6">
-                <h5 id="powerdown">Penalties</h5>
-                <ul>
-                  <li>Negative self-talk</li>
-                  <li>Isolating</li>
-                  <li>Not drinking water</li>
-                  <li>Not taking meds</li>
-                  <li>Not eating healthy</li>
-                  <li>Not keeping appointments</li>
-                  <li>No powerups</li>
-                  <li>Ruminating</li>
-                  <li>Trouble concentrating</li> 
-                  <li>Little interest in activities</li>
-                  <li>Trouble sleeping</li>
-                  <li>Sleeping too much</li>
-                  <li>Feeling hopeless</li>
-                  <li>Thinking about death/suicide</li>    
-                </ul>
-            </div>
-            </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="card col-md-3">
+                <p id="day1" contenteditable="true">Enter your power up here</p>
+                <button id="done1">Task complete</button>
+              </div>
 
-                    
-           
-          <div class="col-lg-4 mt-3"> 
-            <div id="progress">
-              <h4>Today's Progress: <span id="count">0</span></h4>
-              <div class="container">
-                <button id="increment">Add a point</button>
-                <button id="decrement">Subtract a point</button>
+              <div class="card col-md-3">
+                <p id="day2"contenteditable="true">Enter your power up here</p>
+                <button id="done2">Task complete</button>
+              </div>
+
+              <div class="card col-md-3">
+                <p id="day3"contenteditable="true">Enter your power up here</p>
+                <button id="done3">Task complete</button>
+              </div>
+
+              <div class="card col-md-3">
+                <p id="day4"contenteditable="true">Enter your power up here</p>
+                <button id="done4">Task complete</button>
+              </div>
+
+              <div class="card col-md-3">
+                <p id="day5"contenteditable="true">Enter your power up here</p>
+                <button id="done5">Task complete</button>
+              </div>
+
+
+              <div class="card col-md-3">
+                <p id="day6"contenteditable="true">Enter your power up here</p>
+                <button id="done6">Task complete</button>
+              </div>
+
+
+              <div class="card col-md-3">
+                <p id="day7"contenteditable="true">Enter your power up here</p>
+                <button id="done7">Task complete</button>
+              </div>
+
+              <div class="card col-md-3">
+                <p id="day8"contenteditable="true">Enter your power up here</p>
+                <button id="done8">Task complete</button>
+              </div>
+
+              <div class="card col-md-3">
+                <p id="day9"contenteditable="true">Enter your power up here</p>
+                <button id="done9">Task complete</button>
+              </div>
+
+              <div class="card col-md-3">
+                <p id="day10"contenteditable="true">Enter your power up here</p>
+                <button id="done10">Task complete</button>
+              </div>
+
+              <div class="card col-md-3">
+                <p id="day11"contenteditable="true">Enter your power up here</p>
+                <button id="done11">Task complete</button>
+              </div>
+
+              <div class="card col-md-3">
+                <p id="day12"contenteditable="true">Enter your power up here</p>
+                <button id="done12">Task complete</button>
+              </div>
             </div>
           </div>
-            
- 
-    <!--Power Ups-->     
- <div id="forecast" class="mt-3">
-   <h3>Power Ups</h3>
-   <div class="container">
-    <div class="row">  
-                 <div class="card col-md-4">
-                        <p id="day1">Play w/ Em</p>
-                        <button id="done1">completed</button>
-                  </div>
-                
-                  <div class="card col-md-4">
-                        <p id="day2">Walk</p>
-                        <button id="done2">completed</button>
-                  </div>
-                
-                  <div class="card col-md-4">
-                        <p id="day3">Code</p>
-                        <button id="done3">completed</button>
-                  </div>
-                
-                  <div class="card col-md-4">
-                        <p id="day4">Time w/ Lisa</p>
-                        <button id="done4">completed</button>
-                  </div>
-                
-                  <div class="card col-md-4">
-                        <p id="day5">Read</p>
-                        <button id="done5">completed</button>
-                  </div>
+        </div>
+        <!--end of powerups-->
 
 
-                    <div class="card col-md-4">
-                      <p id="day6">Volunteer</p>
-                      <button id="done6">completed</button>
-                  </div>
- 
+      </div>
+      <!--row-->
 
-                  <div class="card col-md-4">
-                    <p id="day7">Read</p>
-                    <button id="done7">completed</button>
-                  </div>
+      <!-- </div> end of inner container-->
 
-                  <div class="card col-md-4">
-                    <p id="day8">Hike</p>
-                    <button id="done8">completed</button>
-                  </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
 
-                  <div class="card col-md-4">
-                    <p id="day9">Walk dog</p>
-                    <button id="done9">completed</button>
-                  </div>
-
-                  <div class="card col-md-4">
-                    <p id="day10">Ride bike</p>
-                    <button id="done10">completed</button>
-                 </div>
-
-                 <div class="card col-md-4">
-                  <p id="day11">Run</p>
-                  <button id="done11">completed</button>
-               </div>
-
-                  <div class="card col-md-4">
-                    <p id="day12">Shower</p>
-                    <button id="done12">completed</button>
-                </div>
-       
-      </div> <!--end of powerups-->
- 
-    </div> <!--row-->
-
-  </div> <!--end of inner container-->
-
-
-
-<!--<div class="container"> 
+  <!--<div class="container"> 
   <div class="row">
 
                        <div class="col-lg-6 mt-3"> 
@@ -170,24 +189,23 @@ var play = confirm("Would you like to Battle?");
                           </ul>
                       </div>
                       </div>-->
-    </div> <!--end of row-->
-  </div> <!--end of container-->
-
-</div> <!--end of row-->
-</div> <!--end of container-->
-
-  </body>
+  </div>
+  <!--end of row-->
+  </div>
+  <!--end of container-->
 
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>       
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
 <script src="./script.js"></script>
 
