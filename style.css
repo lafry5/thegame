@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: gray;
+}
+
+body {
+    background-image: url("./retro_rose_pattern_241386.jpg");
+}
+
+#search {
+    border: solid, black;
+    border-top: solid, black;
+    border-bottom: solid, black;
+    border-left: solid, black;
+    border-right: solid, black;
+}
+
 #searchb {
     height: calc(1.5em + .75rem + 2px);
     border-radius: .25rem;
@@ -16,7 +32,7 @@
 }
 
 #powerup {
-    text-align: left;
+    text-align: center;
  }
 
 .down {
@@ -56,22 +72,27 @@
 
 }
 
+ul {
+    background-color: white;
+}
+
 .list-group {
     min-height: 130px;
     list-style: none;
-   padding:20px; 
+    padding:20px; 
     border-top: solid, grey;
     border-bottom: solid, grey;
     border-left: solid, grey;
     border-right: solid, grey;
     box-shadow: beige;
+    background-color: white;
   }
 
 
   ul {
     display:inline-block;
     border:1px solid #000;
-   padding:20px; 
+    padding:20px; 
  }
 
 .card {
