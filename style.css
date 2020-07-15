@@ -39,13 +39,21 @@ body {
  }
 
 .down {
-   /* background-color:lightcoral; */
+  /* background-color:lightcoral; */
     display: inline;
 }
 
 /*.up {
       display: inline;
   }*/
+
+.hide {
+    display: none; /*change to none */
+}
+
+/*.logo {
+    border-image: solid, black;
+}*/
 
 
 div.col-lg-4 {

@@ -62,13 +62,15 @@ btn.addEventListener('click', function() {
 
 incrementEl.addEventListener("click", function() {
   count++;
-  setCounterText();
+  setCounterText()
+  showImage();
 });
 
 decrementEl.addEventListener("click", function() {
   if(count > 0) {
     count--;
-    setCounterText();
+    setCounterText()
+    showImage();
   }
 }); 
 
@@ -79,62 +81,92 @@ function setCounterText() {
 
 done1El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done2El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done3El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done4El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done5El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done6El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done7El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done8El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done9El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done10El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done11El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
 
 done12El.addEventListener('click', function() {
     count++;
-    setCounterText();
+    setCounterText()
+    showImage();
 });
+
+
+// Display images
+
+// function showImage (count) {
+//     if(count >0) {
+//         var logoEl = document.createElement('logo')
+//         logoEl.removeAttribute("class");
+//         if (count==1) {
+//             // Congrats
+//             logoEl.src = "./"
+//         }
+//         if (count==2) {
+              
+       
+//     } // end of if
+//     return count
+// } // end of showImage
 
 
