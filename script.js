@@ -153,24 +153,97 @@ done12El.addEventListener('click', function() {
 
 
 // Display images
+var imgEl = document.getElementById('logo')
+var imgReplace2 = document.getElementById('logo-image'); // for count 2 image, replace logo image in count 1
+var imgReplace3 = document.getElementById('logo-image2')
+var imgReplace4 = document.getElementById('logo-image3')
+var imgReplace5 = document.getElementById('logo-image4')
+var imgReplace6 = document.getElementById('logo-image5')
+var imgReplace7 = document.getElementById('logo-image6')
+var imgReplace8 = document.getElementById('logo-image7')
+var imgReplace9 = document.getElementById('logo-image8')
+var imgReplace10 = document.getElementById('logo-image9')
+var imgReplace11 = document.getElementById('logo-image10')
+var imgReplace12 = document.getElementById('logo-image11')
+imgEl.src = "congrats.jpg";
+imgReplace2.src = "great job.jpg";
+imgReplace3.src = "keep going.jpg";
+imgReplace4.src = "keep smiling.png";
+imgReplace5.src = "way to go.jpg";
+imgReplace6.src = "you are amazing.jpg";
+imgReplace7.src = "you are beautiful.jpg";
+imgReplace8.src = "you are loved.jpg";
+imgReplace9.src = "you did it.jpg";
+imgReplace10.src = "you got this.jpg";
+imgReplace11.src = "you're awesome.jpg";
+imgReplace12.src = "you are not alone.jpg";
 
 function showImage() {
     console.log(count)
     if(count==1) {
-        var logoEl = document.getElementById('logo');
-        logoEl.removeAttribute("class");
+        var imgEl = document.getElementById('logo')
+        imgEl.removeAttribute("class")
         // setTimeout(function(){
-        //     logoEl.classList.add("hide");
+        //     imgEl.classList.add("hide");
         // }, 2000)
+        // { alert("Congratulations!") 
+        //  }
     } // end of if =1   
     if(count==2) {
-        var imgReplace2 = document.getElementById("logo");
+        var imgReplace2 = document.getElementById('logo-image');
         imgReplace2.src = "great job.jpg";
         imgReplace2.style.visibility = "visible";
-    } // end of if =2   
-    
-              
-       
+    } // end of if =2  
+    if(count==3) {
+        var imgReplace3 = document.getElementById("logo-image2")
+        imgReplace3.src = "keep going.jpg";
+        imgReplace3.style.visibility = "visible";
+    } // end of if =3
+//     if(count==4) {
+//         // var imgReplace4 = document.getElementById("logo-image3");
+//         // imgReplace4.src = "keep smiling.png";
+//         imgReplace4.style.visibility = "visible";
+//     } // end of if =4
+//     if(count==5) {
+//         // var imgReplace5 = document.getElementById("logo-image4");
+//         // imgReplace5.src = "way to go.jpg";
+//         imgReplace5.style.visibility = "visible";
+//     } // end of if =5
+//     if(count==6) {
+//         // var imgReplace6 = document.getElementById("logo-image5");
+//         // imgReplace6.src = "you are amazing.jpg";
+//         imgReplace6.style.visibility = "visible";
+//     } // end of if =6  
+//     if(count==7) {
+//         // var imgReplace7 = document.getElementById("logo-image6");
+//         // imgReplace7.src = "you are beautiful.jpg";
+//         imgReplace7.style.visibility = "visible";
+//     } // end of if =7 
+//     if(count==8) {
+//         // var imgReplace8 = document.getElementById("logo-image7");
+//         // imgReplace8.src = "you are loved.jpg";
+//         imgReplace8.style.visibility = "visible";
+//     } // end of if =8 
+//     if(count==9) {
+//         // var imgReplace9 = document.getElementById("logo-image8");
+//         // imgReplace9.src = "you did it.jpg";
+//         imgReplace9.style.visibility = "visible";
+//     } // end of if =9 
+//     if(count==10) {
+//         // var imgReplace10 = document.getElementById("logo-image9");
+//         // imgReplace10.src = "you got this.jpg";
+//         imgReplace10.style.visibility = "visible";
+//     } // end of if =10 
+//     if(count==11) {
+//         // var imgReplace11 = document.getElementById("logo-image10");
+//         // imgReplace11.src = "you're awesome.jpg";
+//         imgReplace11.style.visibility = "visible";
+//     } // end of if =11  
+//     if(count==12) {
+//         // var imgReplace12 = document.getElementById("logo-image11");
+//         // imgReplace12.src = "you are not alone.jpg";
+//         imgReplace12.style.visibility = "visible";
+//     } // end of if =12                
     
 } // end of showImage
 
