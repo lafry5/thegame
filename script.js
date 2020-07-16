@@ -154,19 +154,24 @@ done12El.addEventListener('click', function() {
 
 // Display images
 
-// function showImage (count) {
-//     if(count >0) {
-//         var logoEl = document.createElement('logo')
-//         logoEl.removeAttribute("class");
-//         if (count==1) {
-//             // Congrats
-//             logoEl.src = "./"
-//         }
-//         if (count==2) {
+function showImage() {
+    console.log(count)
+    if(count==1) {
+        var logoEl = document.getElementById('logo');
+        logoEl.removeAttribute("class");
+        // setTimeout(function(){
+        //     logoEl.classList.add("hide");
+        // }, 2000)
+    } // end of if =1   
+    if(count==2) {
+        var imgReplace2 = document.getElementById("logo");
+        imgReplace2.src = "great job.jpg";
+        imgReplace2.style.visibility = "visible";
+    } // end of if =2   
+    
               
        
-//     } // end of if
-//     return count
-// } // end of showImage
+    
+} // end of showImage
 
 
