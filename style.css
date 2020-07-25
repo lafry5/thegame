@@ -20,6 +20,16 @@ body {
     border-right: solid, black;
 }
 
+contactbutton {
+    margin: 40px;
+    padding: 10px;
+    border: solid, black;
+    border-top: solid, black;
+    border-bottom: solid, black;
+    border-left: solid, black;
+    border-right: solid, black;
+}
+
 /*#searchb {
     height: calc(1.5em + .75rem + 2px);
     border-radius: .25rem;

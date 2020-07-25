@@ -38,14 +38,18 @@ for(i=0;i<myCityArray.length;i++){
    localStorage.setItem('citykey',myCityArray)
    var parentList = document.querySelector(".list-group")
    var myLi = document.createElement("li")
+   var contactbutton = document.createElement("button")
+   contactbutton.textContent = "Contact made"
    myLi.textContent = currentcity
-   myLi.addEventListener('click', function() {
-    //    count++;
+   contactbutton.addEventListener('click', function() {
+       count++;
+       setCounterText()
        console.log(count)
     //    setCounterText()
    })
 //    return count
 }
+myLi.append(contactbutton) //append puts the button after; prepend puts the button before
 parentList.append(myLi)
 console.log("Line 30 :- "+ currentcity);
 console.log("mycityarray is" + myCityArray)
