@@ -44,6 +44,7 @@ for(i=0;i<myCityArray.length;i++){
    contactbutton.addEventListener('click', function() {
        count++;
        setCounterText()
+       showImage()
        console.log(count)
     //    setCounterText()
    })
@@ -64,19 +65,19 @@ btn.addEventListener('click', function() {
 }) //end of addEventListener button */
 
 
-incrementEl.addEventListener("click", function() {
-  count++;
-  setCounterText()
-  showImage();
-});
+// incrementEl.addEventListener("click", function() {
+//   count++;
+//   setCounterText()
+//   showImage();
+// });
 
-decrementEl.addEventListener("click", function() {
-  if(count > 0) {
-    count--;
-    setCounterText()
-    showImage();
-  }
-}); 
+// decrementEl.addEventListener("click", function() {
+//   if(count > 0) {
+//     count--;
+//     setCounterText()
+//     showImage();
+//   }
+// }); 
 
 function setCounterText() {
     countEl.textContent = count;
@@ -131,29 +132,29 @@ done8El.addEventListener('click', function() {
     showImage();
 });
 
-done9El.addEventListener('click', function() {
-    count++;
-    setCounterText()
-    showImage();
-});
+// done9El.addEventListener('click', function() {
+//     count++;
+//     setCounterText()
+//     showImage();
+// });
 
-done10El.addEventListener('click', function() {
-    count++;
-    setCounterText()
-    showImage();
-});
+// done10El.addEventListener('click', function() {
+//     count++;
+//     setCounterText()
+//     showImage();
+// });
 
-done11El.addEventListener('click', function() {
-    count++;
-    setCounterText()
-    showImage();
-});
+// done11El.addEventListener('click', function() {
+//     count++;
+//     setCounterText()
+//     showImage();
+// });
 
-done12El.addEventListener('click', function() {
-    count++;
-    setCounterText()
-    showImage();
-});
+// done12El.addEventListener('click', function() {
+//     count++;
+//     setCounterText()
+//     showImage();
+// });
 
 
 // Display images

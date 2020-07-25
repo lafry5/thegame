@@ -32,14 +32,28 @@ var play = confirm("Would you like to Battle?");
     <h1>Battle to Better</h1>
   </header>
 
+  <p> Battle to Better is a game to help you battle your Depression. In this game you will identify your Allies, someone you can depend on and turn to when you simply need to talk. You will also identify your Power Ups. These are things that make you feel even the slightest bit better. It could be talking to a friend or taking a shower...whatever helps lift you when you are down. You will see that, like in a game, there are also Penalties. Penalties in Depression are typical areas that we'd like to try to stay away from, as much as possible. They are sleeping too much or, at its worst, having thoughts of death. Battle to Better helps us track our contact with our Allies, when we do our Power Ups or when we hit a Penalty and the game gives us a progress count. The objective is to try to see if we can Battle to Better!</p>
+
   <div class="container">
     <div class="row">
       <!--left side below-->
       <div class="col-lg-4 mt-3">
-        <h5 id="search" class="mt-3">Who are Your Allies?</h5>
+        <div id="progress">
+          <h4>Today's Progress: <span id="count">0</span></h4>
+          <!-- <div class="container">
+            <button id="increment">Add a point</button>
+            <button id="decrement">Subtract a point</button>
+          </div> -->
+        </div>
+      </div>
+       
+       
+      <div class="col-lg-4 mt-3">
+        <h5 id="search" class="mt-3">Enter Your Allies</h5>
+        <p>Isolating is a natural part of Depression. But who are the people that you know you can turn to? Enter a name and press Enter; they will be added to your Ally list. Do this for each Ally. Anytime you make a contact with one of them, click 'Contact made'. This is a great step forward!</p>
         <div class="form-inline form-group">
           <input class="form-control" type="text" id="search-value" />
-          <button class="btn btn-primary" id="search-button"> <i class="fa fa-sign-in"></i> </button>
+         <button class="btn btn-primary" id="search-button"><i class="fa fa-sign-in"></i> </button>
         </div>
         <ul class="list-group">
           <!--list elements-->
@@ -47,37 +61,27 @@ var play = confirm("Would you like to Battle?");
       </div>
 
 
+
       <div class="col-lg-4 mt-3">
         <div class="down col-md-6">
           <h5 id="powerdown">Penalties</h5>
+          <p>Click a penalty if you encounter it today. Don't worry, use your Power Ups and Allies to keep moving forward. You are perfect exactly where you are!</p>
           <ul>
-            <li>Negative self-talk</li>
-            <li>Isolating</li>
-            <li>Not drinking water</li>
-            <li>Not taking meds</li>
-            <li>Not eating healthy</li>
-            <li>Not keeping appointments</li>
-            <li>No powerups</li>
-            <li>Ruminating</li>
-            <li>Trouble concentrating</li>
-            <li>Little interest in activities</li>
-            <li>Trouble sleeping</li>
-            <li>Sleeping too much</li>
-            <li>Feeling hopeless</li>
-            <li>Thinking about death/suicide</li>
+            <li> <a href="#">Negative self-talk</a></li>
+            <li><a href="#">Isolating</a></li>
+            <li><a href="#">Not drinking water</a></li>
+            <li><a href="#">Not taking meds</a></li>
+            <li><a href="#">Not eating healthy</a></li>
+            <li><a href="#">Not keeping appointments</a></li>
+            <li><a href="#">No power ups</a></li>
+            <li><a href="#">Ruminating</a></li>
+            <li><a href="#">Trouble concentrating</a></li>
+            <li><a href="#">Little interest in activities</a></li>
+            <li><a href="#">Trouble sleeping at night</a></li>
+            <li><a href="#">Sleeping too much</a></li>
+            <li><a href="#">Feeling hopeless</a></li>
+            <li><a href="#">Thinking about death/suicide</a></li>
           </ul>
-        </div>
-      </div>
-
-
-
-      <div class="col-lg-4 mt-3">
-        <div id="progress">
-          <h4>Today's Progress: <span id="count">0</span></h4>
-          <div class="container">
-            <button id="increment">Add a point</button>
-            <button id="decrement">Subtract a point</button>
-          </div>
         </div>
       </div>
 
@@ -91,67 +95,68 @@ var play = confirm("Would you like to Battle?");
         <div class="row">
           <div class="col-lg-6">
             <div class="row">
+              <p>Think of Power Ups that make you feel better. Enter one into each box where it says "Enter here". Throughout the day when you complete one of your Power Ups, click Done. Even identifying your Power Ups is a great first step! Way to go!</p>
               <div class="card col-md-3">
-                <p id="day1" contenteditable="true">Enter your power up here</p>
-                <button id="done1">Task complete</button>
+                <p id="day1" contenteditable="true">Enter here</p>
+               <button id="done1">Done</button>
               </div>
 
               <div class="card col-md-3">
-                <p id="day2" contenteditable="true">Enter your power up here</p>
-                <button id="done2">Task complete</button>
+                <p id="day2" contenteditable="true">Enter here</p>
+              <button id="done2">Done</button>
               </div>
 
               <div class="card col-md-3">
-                <p id="day3" contenteditable="true">Enter your power up here</p>
-                <button id="done3">Task complete</button>
+                <p id="day3" contenteditable="true">Enter here</p>
+               <button id="done3">Done</button>
               </div>
 
               <div class="card col-md-3">
-                <p id="day4" contenteditable="true">Enter your power up here</p>
-                <button id="done4">Task complete</button>
+                <p id="day4" contenteditable="true">Enter here</p>
+                <button id="done4">Done</button>
               </div>
 
               <div class="card col-md-3">
-                <p id="day5" contenteditable="true">Enter your power up here</p>
-                <button id="done5">Task complete</button>
-              </div>
-
-
-              <div class="card col-md-3">
-                <p id="day6" contenteditable="true">Enter your power up here</p>
-                <button id="done6">Task complete</button>
+                <p id="day5" contenteditable="true">Enter here</p>
+                <button id="done5">Done</button>
               </div>
 
 
               <div class="card col-md-3">
-                <p id="day7" contenteditable="true">Enter your power up here</p>
-                <button id="done7">Task complete</button>
+                <p id="day6" contenteditable="true">Enter here</p>
+               <button id="done6">Done</button>
+              </div>
+
+
+              <div class="card col-md-3">
+                <p id="day7" contenteditable="true">Enter here</p>
+               <button id="done7">Done</button>
               </div>
 
               <div class="card col-md-3">
-                <p id="day8" contenteditable="true">Enter your power up here</p>
-                <button id="done8">Task complete</button>
+                <p id="day8" contenteditable="true">Enter here</p>
+               <button id="done8">Done</button>
+              </div>
+
+              <!-- <div class="card col-md-3">
+                <p id="day9" contenteditable="true">Enter one here</p>
+               <button id="done9">Task complete</button>
               </div>
 
               <div class="card col-md-3">
-                <p id="day9" contenteditable="true">Enter your power up here</p>
-                <button id="done9">Task complete</button>
+                <p id="day10" contenteditable="true">Enter one here</p>
+               <button id="done10">Task complete</button>
               </div>
 
               <div class="card col-md-3">
-                <p id="day10" contenteditable="true">Enter your power up here</p>
-                <button id="done10">Task complete</button>
-              </div>
-
-              <div class="card col-md-3">
-                <p id="day11" contenteditable="true">Enter your power up here</p>
+                <p id="day11" contenteditable="true">Enter one here</p>
                 <button id="done11">Task complete</button>
               </div>
 
               <div class="card col-md-3">
-                <p id="day12" contenteditable="true">Enter your power up here</p>
+                <p id="day12" contenteditable="true">Enter one here</p>
                 <button id="done12">Task complete</button>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -161,7 +166,7 @@ var play = confirm("Would you like to Battle?");
           </div>
 
 
-          <!--second row, third column-->
+          <!--second row, third column--> <!--This isn't working-->
           <div class="col-lg-3">
             <div id="logo2">
               <img id="logo-image" src="" alt=""> <!--leave src blank-->
