@@ -27,6 +27,14 @@ body {
     border-right: solid,  rgb(158, 151, 151);
 } */
 
+div.col-lg-4 {
+ display: inline-block;
+}
+
+#logo2 {
+    align-content: center;
+    text-align: center;
+}
 
 
 #search {
@@ -77,9 +85,13 @@ div.col-lg-4.mt.3 ul.list-group li button {
       display: inline;
   }*/
 
+/* #intro {
+    display: visible;
+}
+
 .hide {
     display: none; /*change to none */
-}
+} */
 
 /*.logo {
     border-image: solid, black;

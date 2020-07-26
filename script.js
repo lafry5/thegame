@@ -62,8 +62,7 @@ return myCityArray
 btn.addEventListener('click', function() { 
     storecity(searchV.value)
     //Need to figure the next two lines out so it hides the intro
-    var introEl = document.getElementById('#intro')
-    introEl.setAttribute("class", "hide");
+    // document.getElementById('intro').style.visibility = "hidden";
     // buttonclick(searchV.value)
 }) //end of addEventListener button */
 
