@@ -189,7 +189,7 @@ function showImage(num) {
     console.log(count)
     if(count==0) {   
         var name = prompt("What's your name?")
-        alert("Welcome to Battle to Better, " + name)        
+        alert("Welcome to Back to Better, " + name)        
      } // end of if =0 
     if(count==1) {
         var imgReplace = document.getElementById('logo-image');
